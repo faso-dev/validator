@@ -1,0 +1,21 @@
+{
+    "name": "faso-dev/utils",
+    "description": "Ce package a pour objectif d'aider dans la vérification de tout ce qui concerne pièces d'identité, numero de transaction, numero de télephone burkinabé,mot de passe",
+    "type": "metapackage",
+    "require": {
+        "php": "7.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FSDV\\": "FSDV/src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "faso-dev",
+            "email": "faso-dev@protonmail.ch"
+        }
+    ],
+    "minimum-stability": "dev"
+}
