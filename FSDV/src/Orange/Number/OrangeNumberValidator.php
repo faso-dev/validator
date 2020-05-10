@@ -29,7 +29,7 @@ class OrangeNumberValidator extends NumberValidator implements OrangeNumberValid
         //0022667000000 => [67000000]
         $number = NumberExtractor::extract($number);
         if (isset($number)){
-            return preg_match(self::ORANGE_BF_NUMBER_REGEX, $number);
+            return preg_match(self::ORANGE_BF_NUMBER_REGEX, $number) === 1;
         }
 
         return false;

@@ -21,6 +21,8 @@ class NumberExtractor implements NumberExtractorInterface
      */
     public static function extract(string $full_number): string
     {
-       return explode('00226', $full_number)[1];
+       $number = explode('00226', $full_number);
+
+       return $number[1] ?? $full_number;
     }
 }
